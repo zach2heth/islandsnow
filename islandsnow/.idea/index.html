@@ -11,46 +11,39 @@
 </head>
 <body>
 
-<div class="ui menu">
-  <div class="ui icons">
-    <i class="facebook icon"></i>
-    <i class="twitter icon"></i>
-    <i class="instagram icon"></i>
-  </div>
-  <div class="right menu">
-    <div class="ui icons">
-      <i class="home icon"></i>
-      <i class="search icon"></i>
-      <i class="avatar icon"></i>
+
+<div class="ui borderless topmenu menu">
+  <div class="ui container">
+    <a class="fitted item"><i class="ui facebook f icon"></i></a>
+    <a class=" fitted item"><i class="ui twitter icon"></i></a>
+    <a class="fitted item"><i class="ui pinterest icon"></i></a>
+    <a class="fitted item"><i class="ui instagram icon"></i></a>
+    <div class="right menu">
+      <a class="fitted item"><i class="ui home icon"></i></a>
+      <a class="fitted item"><i class="ui search icon"></i></a>
+      <a class="fitted item"><i class="ui user icon"></i></a>
+
+      <div class="compact menu">
+        <div class="ui simple dropdown item">
+          MY CART
+          <i class="ui cart icon"></i>
+          0
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">My cart is currently empty</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
 
-<h1 class="ui center aligned header"><img class="ui big image"
-                                          src="https://cdn.shopify.com/s/files/1/1035/5187/t/5/assets/logo.png?12738032654134160651"
-</h1>
-<div class="ui center borderless menu">
-  <div class="ui dropdown">
-    <div class="text">Men</div>
-    <i class="dropdown icon"></i>
-    <div class="menu">
-      <div class="item">Tank Top</div>
-      <div class="item">Shirts</div>
-    </div>
-  </div>
-  <div class="item">
-    Women<i class="dropdown icon"></i>
-  </div>
-  <div class="item">
-    Kids<i class="dropdown icon"></i>
-  </div>
-  <div class="item">
-    Brands<i class="dropdown icon"></i>
-  </div>
-  <div class="item">
-    Search
-  </div>
+<script>
+  $('.ui.dropdown')
+      .dropdown()
+  ;
+</script>
 
-</div>
 </body>
 </html>
